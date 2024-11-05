@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoContext from "./todoContext";
 
 const TodoState = (props) => {
-  const host = "http://10.10.240.185:2000";
+  const host = "http://localhost:2000";
   const todosInitial = [];
   const [todos, setTodos] = useState(todosInitial);
 
