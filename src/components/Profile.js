@@ -43,7 +43,7 @@ const Profile = () => {
   }, [getNotes, navigate]);
 
   const getUser = async () => {
-    const response = await fetch(`http://10.10.240.185:2000/api/auth/getuser`, {
+    const response = await fetch(`http://localhost:2000/api/auth/getuser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const Profile = () => {
 
     try {
       const response = await fetch(
-        `http://10.10.240.185:2000/api/auth/updateuser`,
+        `http://localhost:2000/api/auth/updateuser`,
         {
           method: "PUT",
           headers: {
