@@ -42,7 +42,7 @@ const Navbar = () => {
       {!localStorage.getItem('token')?<form className="d-flex" role="search">
       <Link className={`btn btn-primary mx-1 my-1 ${location.pathname==="/login"?"disabled":""}`} to="/login" role="button">Login</Link>
       <Link className={`btn btn-primary mx-1 my-1 ${location.pathname==="/signup"?"disabled":""}`} to="/signup" role="button">Sign Up</Link>
-      </form>:<span><button className='btn btn-primary' onClick={handleLogout}>Logout</button>&nbsp;&nbsp;&nbsp;<Link to="/profile"><img src={`http://10.10.240.185:2000/uploads/`} alt='Profile' height="35" style={{borderRadius: '10000px'}}></img></Link></span>}&nbsp;&nbsp;&nbsp;
+      </form>:<span><button className='btn btn-primary' onClick={handleLogout}>Logout</button>&nbsp;&nbsp;&nbsp;<Link to="/profile"><img src={`http://localhost:2000/uploads/`} alt='Profile' height="35" style={{borderRadius: '10000px'}}></img></Link></span>}&nbsp;&nbsp;&nbsp;
       
     </div>
   </div>
